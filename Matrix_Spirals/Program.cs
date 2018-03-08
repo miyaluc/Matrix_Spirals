@@ -36,6 +36,17 @@ namespace Matrix_Spirals
                     Console.WriteLine(structure[i, n - 1]);
                 }
                 n--;
+
+                //if there are rows remaining
+                if (k < m)
+                {
+                    //printing the last (bottom) row
+                    for (i = n - 1; i >= l; i--)
+                    {
+                        Console.WriteLine(structure[m - 1, i]);
+                    }
+                    m--;
+                }
             }
         }
     }
