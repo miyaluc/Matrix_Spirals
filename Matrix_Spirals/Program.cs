@@ -29,6 +29,13 @@ namespace Matrix_Spirals
                     Console.WriteLine(structure[k, i]);
                 }
                 k++;
+
+                //printing the last (far right) column
+                for (i = k; i < m; i++)
+                {
+                    Console.WriteLine(structure[i, n - 1]);
+                }
+                n--;
             }
         }
     }
