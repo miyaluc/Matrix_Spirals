@@ -47,6 +47,17 @@ namespace Matrix_Spirals
                     }
                     m--;
                 }
+
+                //if there are columns remaining
+                if (l < n)
+                {
+                    //printing the first (far left) column
+                    for (i = m - 1; i >= k; i--)
+                    {
+                        Console.WriteLine(structure[i, l]);
+                    }
+                    l++;
+                }
             }
         }
     }
