@@ -21,6 +21,15 @@ namespace Matrix_Spirals
             //i - iterator
 
             //while starting row index < ending row index AND starting column index < ending column index
+            while (k < m && l < n)
+            {
+                //printing the first (top) row 
+                for (i = l; i < n; i++)
+                {
+                    Console.WriteLine(structure[k, i]);
+                }
+                k++;
+            }
         }
     }
 }
